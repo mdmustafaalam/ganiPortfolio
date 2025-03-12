@@ -10,7 +10,7 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
   --background-color: #000000; /* Background color for the entire website, including individual sections */
-  --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #18d26e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #1a1a1a; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -36,7 +36,7 @@
 
 .dark-background {
   --background-color: rgba(15, 15, 15, 0.975);
-  --default-color: #ffffff;
+  --default-color: ##fffff;
   --heading-color: #ffffff;
   --surface-color: #292929f9;
   --contrast-color: #000000;
@@ -316,6 +316,9 @@ h6 {
 @media (max-width: 768px) {
   .header {
     height: 9vh !important;
+  }
+  .sidebar .sidebar-toggle {
+    top: 7px !important;
   }
   #sidebar {
     width: 350px !important;
@@ -792,7 +795,7 @@ section,
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .about .content ul strong {
@@ -801,7 +804,7 @@ section,
 
 .about .content ul i {
   font-size: 16px;
-  margin-right: 5px;
+  margin-right: 7px;
   color: var(--accent-color);
   line-height: 0;
 }
@@ -1760,10 +1763,6 @@ section,
   .sidebar {
     left: -130%;
   }
-  .image-height-auto {
-    max-height: 300px !important;
-    width: auto !important;
-  }
 }
 
 .sidebar.sidebar-show {
@@ -1785,7 +1784,7 @@ section,
   border-radius: 50%;
   cursor: pointer;
   position: fixed;
-  top: 7px;
+  top: 15px;
   left: 15px;
   z-index: 99999;
   transition: background-color 0.3s;
@@ -1858,6 +1857,12 @@ isotope-container {
     width: 50% !important;
     padding: 5px !important;
   }
+  .container {
+    margin: 5px !important;
+  }
+  .price-service-row {
+    margin: 0 12px !important;
+  }
 }
 
 .sidebar .sidebar-toggle img {
@@ -1870,4 +1875,14 @@ isotope-container {
 .font-size-cnges-my-work {
   font-size: 18px !important;
   font-weight: 500 !important;
+}
+#price {
+  background-color: #fafafa !important;
+}
+.price-service-row {
+  margin: 0 25px;
+}
+
+.container-nav-toggle-mob {
+  color: #ffffff !important;
 }
