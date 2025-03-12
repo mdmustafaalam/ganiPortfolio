@@ -726,7 +726,7 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 600;
 }
 
@@ -1656,9 +1656,9 @@ section,
 .color-cng-head {
   color: var(--default-color) !important;
 }
-.font-cng-gani {
+.hero h2.font-cng-gani {
   padding-top: 5px;
-  font-size: 64px !important;
+  font-size: 60px;
   font-weight: 700 !important;
 }
 
@@ -1785,7 +1785,7 @@ section,
   border-radius: 50%;
   cursor: pointer;
   position: fixed;
-  top: 15px;
+  top: 8px;
   left: 15px;
   z-index: 99999;
   transition: background-color 0.3s;
@@ -1821,6 +1821,14 @@ isotope-container {
     max-width: 850px;
   }
 }
+@media (max-width: 520px) {
+  .hero h2 {
+    font-size: 15px;
+  }
+  .font-cng-gani {
+    font-size: 36px !important;
+  }
+}
 @media (max-width: 958px) {
   #sidebar.hidden {
     left: -370px;
@@ -1839,8 +1847,8 @@ isotope-container {
   .header {
     margin-left: 0;
   }
-  .font-cng-gani {
-    font-size: 55px !important;
+  .hero h2.font-cng-gani {
+    font-size: 55px;
     padding-bottom: 8px !important;
   }
 }
