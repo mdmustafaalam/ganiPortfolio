@@ -132,6 +132,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+
 .header {
   --background-color: rgba(0, 0, 0, 0);
   color: var(--default-color);
@@ -139,7 +140,7 @@ h6 {
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
-  margin-left: 450px;
+  margin-left: 370px;
 }
 
 .header .logo {
@@ -313,6 +314,12 @@ h6 {
   display: none;
 }
 @media (max-width: 768px) {
+  .header {
+    height: 9vh !important;
+  }
+  #sidebar {
+    width: 350px !important;
+  }
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -321,6 +328,10 @@ h6 {
     cursor: pointer;
     transition: color 0.3s;
     display: block;
+  }
+
+  .price-container {
+    margin: 0 20px;
   }
 
   .navmenu {
@@ -1659,7 +1670,7 @@ section,
   left: 0;
   bottom: 0;
   padding: 0 15px;
-  width: 450px;
+  width: 370px;
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
   z-index: 997;
@@ -1720,7 +1731,7 @@ section,
 @media (min-width: 958px) {
   .sidebar ~ main,
   .sidebar ~ #footer {
-    margin-left: 450px;
+    margin-left: 370px;
   }
   .sidebar-icon-images {
     display: none !important;
@@ -1729,6 +1740,9 @@ section,
 @media (min-width: 958px) and (max-width: 1080px) {
   .sidebar {
     width: 350px !important;
+  }
+  .header {
+    margin-left: 350px !important;
   }
   .sidebar ~ main,
   .sidebar ~ #footer {
@@ -1740,8 +1754,15 @@ section,
 }
 
 @media (max-width: 958px) {
+  .section-title {
+    padding-bottom: 5px !important;
+  }
   .sidebar {
     left: -130%;
+  }
+  .image-height-auto {
+    max-height: 300px !important;
+    width: auto !important;
   }
 }
 
@@ -1789,7 +1810,7 @@ isotope-container {
   position: fixed;
   left: 0;
   top: 0;
-  width: 450px;
+  width: 370px;
   height: 100%;
   background: #222; /* Dark background */
   transition: left 0.3s ease-in-out;
@@ -1802,13 +1823,18 @@ isotope-container {
 }
 @media (max-width: 958px) {
   #sidebar.hidden {
-    left: -450px;
+    left: -370px;
+  }
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 940px !important;
   }
   #sidebar {
     z-index: 999;
   }
   .section-title {
-    margin: 0 0 0 25px !important;
+    /* margin: 0 0 0 25px !important; */
   }
   .header {
     margin-left: 0;
@@ -1831,4 +1857,9 @@ isotope-container {
   height: 50px;
   object-fit: cover;
   background-repeat: no-repeat;
+}
+
+.font-size-cnges-my-work {
+  font-size: 18px !important;
+  font-weight: 500 !important;
 }
