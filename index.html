@@ -761,19 +761,6 @@
           isotope.layout(); // Ensure proper layout
         });
 
-        // Filter click events
-        const filterButtons = document.querySelectorAll('.portfolio-filters li');
-        filterButtons.forEach(button => {
-          button.addEventListener('click', function () {
-            const filterValue = this.getAttribute('data-filter');
-            isotope.arrange({ filter: filterValue });
-
-            // Manage active class
-            filterButtons.forEach(btn => btn.classList.remove('filter-active'));
-            this.classList.add('filter-active');
-          });
-        });
-
         // Force `.filter-bb` items to be visible on page load (CSS backup fix)
         const bbItems = document.querySelectorAll('.filter-bb');
         bbItems.forEach(item => {
