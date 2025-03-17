@@ -360,32 +360,10 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <script>
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const isotopeContainer = document.querySelector('.isotope-container-showcase');
-      const isotope = new Isotope(isotopeContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'masonry',
-        filter: '.filter-bb' // Default active filter
-      });
-
-      // Filter click events
-      const filterButtons = document.querySelectorAll('.portfolio-filters li');
-      filterButtons.forEach(button => {
-        button.addEventListener('click', function () {
-          const filterValue = this.getAttribute('data-filter');
-          isotope.arrange({ filter: filterValue });
-
-          // Manage active class
-          filterButtons.forEach(btn => btn.classList.remove('filter-active'));
-          this.classList.add('filter-active');
-        });
-      });
-    });
 
 
-  </script>
+
+
 
 
 
