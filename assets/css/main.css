@@ -313,6 +313,14 @@ h6 {
 .mobile-nav-toggle {
   display: none;
 }
+@media (max-width: 991.5px) {
+  .order-rearange-item-one {
+    order: 2;
+  }
+  .order-rearange-item-two {
+    order: 1;
+  }
+}
 @media (max-width: 768px) {
   .header {
     height: 9vh !important;
@@ -1889,4 +1897,12 @@ isotope-container {
 
 .showcase_models-portfoloi img {
   max-height: 50vh !important;
+}
+
+.order-font-cng {
+  font-size: 20px !important;
+}
+.about .content ul a {
+  color: var(--background-color) !important;
+  font-weight: 500;
 }
