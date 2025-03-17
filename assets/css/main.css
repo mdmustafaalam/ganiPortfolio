@@ -1886,3 +1886,7 @@ isotope-container {
 .container-nav-toggle-mob {
   color: #ffffff !important;
 }
+
+.showcase_models-portfoloi img {
+  max-height: 50vh !important;
+}
