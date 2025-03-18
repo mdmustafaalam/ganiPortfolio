@@ -26,6 +26,10 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
@@ -288,7 +292,8 @@
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <ul class="portfolio-filters portfolio-filters-showcase isotope-filters" data-aos="fade-up"
+            data-aos-delay="100">
             <li data-filter=".filter-bb" class="filter-active">BB Model</li>
             <li data-filter=".filter-snb">SNB Model</li>
             <li data-filter=".filter-screenshots">Screenshots</li>
@@ -297,7 +302,7 @@
           <div class="row gy-4 isotope-container isotope-container-showcase portfolio-wrapper" data-aos="fade-up"
             data-aos-delay="200">
 
-            <div class="col-lg-6 col-md-12 portfolio-item isotope-item filter-bb">
+            <div class="col-lg-6 col-md-12 portfolio-item portfolio-item-showcase isotope-item filter-bb">
               <div class="portfolio-content portfolio-card h-100">
                 <img src="assets/img/showcase_models_BB/skibidi toilet.jpg" class="img-fluid"
                   alt="Skibidi Toilet Collection">
@@ -312,7 +317,7 @@
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-            <div class="col-lg-6 col-md-12 portfolio-item isotope-item filter-bb">
+            <div class="col-lg-6 col-md-12 portfolio-item portfolio-item-showcase isotope-item filter-bb">
               <div class="portfolio-content portfolio-card h-100">
                 <img src="assets/img/showcase_models_BB/Poppy playtime.jpg" class="img-fluid"
                   alt="Poppy Playtime 3D & Blocky">
@@ -327,7 +332,7 @@
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-            <div class="col-lg-6 col-md-12 portfolio-item isotope-item filter-bb">
+            <div class="col-lg-6 col-md-12 portfolio-item portfolio-item-showcase isotope-item filter-bb">
               <div class="portfolio-content portfolio-card h-100">
                 <img src="assets/img/showcase_models_BB/3 packs.jpg" class="img-fluid"
                   alt="Marsha & Bear || Ninja Turtle || SchoolBoy Runaway">
@@ -342,7 +347,7 @@
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-            <div class="col-lg-6 col-md-12 portfolio-item isotope-item filter-bb">
+            <div class="col-lg-6 col-md-12 portfolio-item portfolio-item-showcase isotope-item filter-bb">
               <div class="portfolio-content portfolio-card h-100">
                 <img src="assets/img/showcase_models_BB/sprunkis.jpg" class="img-fluid" alt="Sprunkis Normal & Horror">
                 <div class="portfolio-info">
@@ -355,36 +360,18 @@
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-            <div class="col-lg-6 col-md-12 portfolio-item isotope-item filter-bb">
+            <div class="col-lg-12 col-md-12 portfolio-item portfolio-item-showcase isotope-item filter-bb">
               <div class="portfolio-content portfolio-card h-100">
-                <img src="assets/img/showcase_models_BB/Models Collections2-17.jpg" class="img-fluid" alt="Paw Petrol">
-                <div class="portfolio-info">
-                  <h4>BB Model</h4>
-                  <p>Paw Petrol</p>
-                  <a href="assets/img/showcase_models_BB/Models Collections2-17.jpg" title="Paw Petrol (BB Model)"
-                    data-gallery="portfolio-gallery-bb" class="glightbox preview-link">
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-6 col-md-12 portfolio-item isotope-item filter-bb">
-              <div class="portfolio-content portfolio-card h-100">
-                <img src="assets/img/showcase_models_BB/zoonomaly.jpg" class="img-fluid" alt="Zoonomaly">
-                <div class="portfolio-info">
-                  <h4>BB Model</h4>
-                  <p>Zoonomaly</p>
-                  <a href="assets/img/showcase_models_BB/zoonomaly.jpg" title="Zoonomaly (BB Model)"
-                    data-gallery="portfolio-gallery-bb" class="glightbox preview-link">
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
+                <div class="d-flex justify-content-end mb-0 px-5">
+                  <a href="./bb_model.html"><button class="btn btn-sm btn-warning">See More</button></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-12 portfolio-item isotope-item filter-snb">
+
+            <div class="col-lg-6 col-md-12 portfolio-item portfolio-item-showcase isotope-item filter-snb">
               <div class="portfolio-content portfolio-card h-100">
-                <img src="assets/img/Images/snbmodel.png" class="img-fluid" alt="SNB Model">
+                <img src="assets/img/showcase_models_BB/3 packs.jpg" class="img-fluid" alt="SNB Model">
                 <div class="portfolio-info">
                   <h4>SNB Model</h4>
                   <p>Sample Model</p>
@@ -395,9 +382,16 @@
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
+            <div class="col-lg-12 col-md-12 portfolio-item portfolio-item-showcase isotope-item filter-snb">
+              <div class="portfolio-content portfolio-card h-100">
+                <div class="d-flex justify-content-end mb-0 px-5">
+                  <a href="#!"><button class="btn btn-sm btn-warning">See More</button></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
 
 
-            <div class="col-lg-6 col-md-12 portfolio-item isotope-item filter-screenshots">
+            <div class="col-lg-6 col-md-12 portfolio-item portfolio-item-showcase isotope-item filter-screenshots">
               <div class="portfolio-content portfolio-card h-100">
                 <img src="assets/img/Images/snbmodel.png" class="img-fluid" alt="Screenshots">
                 <div class="portfolio-info">
@@ -410,8 +404,16 @@
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
+            <div class="col-lg-12 col-md-12 portfolio-item portfolio-item-showcase isotope-item filter-screenshots">
+              <div class="portfolio-content portfolio-card h-100">
+                <div class="d-flex justify-content-end mb-0 px-5">
+                  <a href="#!"><button class="btn btn-sm btn-warning">See More</button></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
 
           </div><!-- End Portfolio Container -->
+
 
         </div>
       </div>
@@ -480,7 +482,7 @@
                       feel free to contact me!</span></li>
 
                   <li class="d-flex justify-content-end mb-0 px-5">
-                    <a href="#!"><button class="btn btn-sm btn-warning">Contact
+                    <a href="#contact"><button class="btn btn-sm btn-warning">Contact
                         Us</button></a>
                   </li>
                 </ul>
@@ -539,20 +541,24 @@
             <div class="row price-service-row">
               <div class="col-lg-12">
                 <ul>
-                  <li><i class="bi bi-diamond-fill"></i><span>Paypal - <a
-                        href="#!">https://www.paypal.me/OsmanKhan73</a></span></li>
-                  <li><i class="bi bi-diamond-fill"></i><span>Binance - <a href="#!">ID 777481062</a></span></li>
-                  <li><i class="bi bi-diamond-fill"></i><span>Telegram Wallet - <a href="#!">Coming Soon</a></span></li>
-                  <li><i class="bi bi-diamond-fill"></i><span>USDT TRC20 - <a
-                        href="#!">TF2mCsimVKeg7zeCNFEZMdRLWdhgntsPt8</a></span></li>
-                  <li><i class="bi bi-diamond-fill"></i><span>USDT (BEP20) - <a
-                        href="#!">0xe73349575127860a69e48b1b00c1ac90e948ceef</a></span></li>
-                  <li><i class="bi bi-diamond-fill"></i><span>Google Pay (UPI) - <a href="#!">osmankhan73@pnb</a></span>
+                  <li><i class="bi bi-diamond-fill"></i><span class="payment-font">Paypal - </span><a
+                      href="https://www.paypal.me/OsmanKhan73" target="_blank"> https://www.paypal.me/OsmanKhan73</a>
+                  </li>
+                  <li><i class="bi bi-diamond-fill"></i><span class="payment-font">Binance - </span> ID 777481062</li>
+                  <li><i class="bi bi-diamond-fill"></i><span class="payment-font">Telegram Wallet - </span> Coming Soon
+                  </li>
+                  <li><i class="bi bi-diamond-fill"></i><span class="payment-font">USDT TRC20 - </span>
+                    TF2mCsimVKeg7zeCNFEZMdRLWdhgntsPt8
+                  </li>
+                  <li><i class="bi bi-diamond-fill"></i><span class="payment-font">USDT (BEP20) - </span>
+                    0xe73349575127860a69e48b1b00c1ac90e948ceef</li>
+                  <li><i class="bi bi-diamond-fill"></i><span class="payment-font">Google Pay (UPI) - </span>
+                    osmankhan73@pnb
                   <li><i class="bi bi-envelope-arrow-down"></i><span>For any questions, feel
                       free to reach out!</span>
                   </li>
                   <li class="d-flex justify-content-end mb-0 px-5">
-                    <a href="#!"><button class="btn btn-sm btn-warning">Contact
+                    <a href="#contact"><button class="btn btn-sm btn-warning">Contact
                         Us</button></a>
                   </li>
                 </ul>
@@ -582,34 +588,124 @@
             <img src="assets/img/about.jpg" class="img-fluid " alt="">
           </div>
           <div class="col-lg-7 content">
-            <h2>Freelancer, 3D Artist</h2>
+            <h2>Work Zone</h2>
             <p class="fst-italic mb-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua.
+              Creating detailed 3D models using Blender and Blockbench, I focus on crafting realistic designs for games,
+              animations, and visual projects.
             </p>
             <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
+              <div class="col-lg-12 work-zone-img px-4 mt-2">
+                <img src="assets/img/workzone.jpg" class="img-fluid " alt="">
               </div>
             </div>
           </div>
         </div>
 
       </div>
+
+    </section><!-- /About Section -->
+
+    <!-- About Section -->
+    <section id="contact" class="about section">
+      <!-- Contact Start -->
+      <div class="container-fluid">
+        <div class="container">
+          <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+            <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-warning">Get In
+              Touch</h5>
+            <h2 class=" w-50 order-font-cng mx-auto">Contact for any query</h2>
+          </div>
+          <div class="row g-5 mb-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+              <div class="h-100">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235850.27042420284!2d88.18253565744779!3d22.535660583743923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1698202482559!5m2!1sen!2sin"
+                  class="border-0 rounded w-100 h-100" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+              <form method="POST" action="contact_action.php">
+                <div class="rounded contact-form">
+                  <div class="mb-4">
+                    <input type="text" class="form-control p-3" name="name" placeholder="Name">
+                  </div>
+                  <div class="mb-4">
+                    <input type="number" class="form-control p-3" name="phone" placeholder="Phone Number">
+                  </div>
+                  <div class="mb-4">
+                    <input type="email" class="form-control p-3" name="email" placeholder="Email">
+                  </div>
+                  <div class="mb-4">
+                    <textarea class="w-100 form-control p-3" name="message" rows="6" cols="10"
+                      placeholder="Message"></textarea>
+                  </div>
+                  <input type="submit" name="submit" value="Send Message" class="btn btn-warning px-5">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row g-4 wow fadeInUp" data-wow-delay=".3s">
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+              <div class="d-flex bg-light p-3 px-0 rounded contact-btn-link">
+                <div
+                  class="flex-shrink-0 d-flex align-items-center justify-content-center bg-warning rounded-circle p-3 px-0 ms-1"
+                  style="width: 64px; height: 64px;">
+                  <i class="fa fa-share text-dark"></i>
+                </div>
+                <div class="ms-2 contact-link">
+                  <h4 class="text-dark">fallow Us</h4>
+                  <div class="d-flex justify-content-center">
+                    <a class="pe-2" href="#"><i class="bi bi-twitter-x text-dark"></i></a>
+                    <a class="px-2" href="#"><i class="bi bi-instagram text-dark"></i></a>
+                    <a class="px-2" href="#"><i class="bi bi-discord text-dark"></i></a>
+                    <a class="px-2" href="#"><i class="bi bi-youtube text-dark"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+              <div class="d-flex bg-light p-3 px-0 rounded contact-btn-link">
+                <div class="d-flex align-items-center justify-content-center bg-warning rounded-circle p-3 ms-1"
+                  style="width: 64px; height: 64px;">
+                  <i class="fa fa-phone text-dark"></i>
+                </div>
+                <div class="ms-2 contact-link">
+                  <h4 class="text-dark">Call Us</h4>
+                  <a class="h5 text-dark fs-6" href="tel:+91 7788778877">+91 7788778877</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+              <div class="d-flex bg-light p-3 px-0 rounded contact-btn-link">
+                <div class="d-flex align-items-center justify-content-center bg-warning rounded-circle p-3 ms-1"
+                  style="width: 64px; height: 64px;">
+                  <i class="fas fa-envelope text-dark"></i>
+                </div>
+                <div class="ms-2 contact-link">
+                  <h4 class="text-dark">Email</h4>
+                  <a class="h5 text-dark fs-6" href="tel:+91 7788778877">osmankhan6129@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+              <div class="d-flex bg-light p-3 px-0 contact-btn-link">
+                <div class="d-flex align-items-center justify-content-center bg-warning rounded-circle p-3 ms-1"
+                  style="width: 64px; height: 64px;">
+                  <i class="fa fa-map-marker-alt text-dark"></i>
+                </div>
+                <div class="ms-2 contact-link">
+                  <h4 class="text-dark">Address</h4>
+                  <a href="#">
+                    <h5 class="text-dark d-inline fs-6">Kolkata, India</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact End -->
 
     </section><!-- /About Section -->
 
@@ -649,6 +745,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     // ----- My Works JS ------
@@ -767,7 +864,7 @@
 
       if (isotopeContainer) {
         const isotope = new Isotope(isotopeContainer, {
-          itemSelector: '.portfolio-item',
+          itemSelector: '.portfolio-item-showcase',
           layoutMode: 'masonry',
         });
 
@@ -782,10 +879,24 @@
         bbItems.forEach(item => {
           item.style.display = 'block';
         });
+
+        // Filter click events for dynamic visibility correction
+        const filterButtons = document.querySelectorAll('.portfolio-filters-showcase li');
+        filterButtons.forEach(button => {
+          button.addEventListener('click', function () {
+            const filterValue = this.getAttribute('data-filter');
+            isotope.arrange({ filter: filterValue }); // Display selected filter
+
+            // Display the correct items even if the Isotope fails to handle them properly
+            const allItems = document.querySelectorAll('.portfolio-item-showcase');
+            allItems.forEach(item => item.style.display = 'none'); // Hide all items
+            const selectedItems = document.querySelectorAll(filterValue);
+            selectedItems.forEach(item => item.style.display = 'block'); // Show selected items
+          });
+        });
       }
     });
     // ----- Showcase Model JS ------
-
 
 
   </script>
