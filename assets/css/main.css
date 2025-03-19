@@ -1136,5 +1136,13 @@ isotope-container {
   object-fit: contain;
 }
 #contact .contact-link h4 {
+  font-size: 20px !important;
   font-weight: 600;
+}
+#contact .contact-icon {
+  font-size: 12px !important;
+}
+.icon-for-card {
+  margin-right: 5px;
+  color: #185a37;
 }
